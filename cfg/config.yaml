@@ -1,0 +1,17 @@
+fold_num: 5
+seed: 719
+model_arch: 'tf_efficientnet_b4_ns'
+img_size: 512
+epochs: 10
+train_bs: 16
+valid_bs: 32
+T_0: 10
+lr: 1e-4
+min_lr: 1e-6
+weight_decay: 1e-6
+num_workers: 4
+accum_iter: 2
+verbose_step: 1
+device: 'cuda:0'
+train_csv_path: '~/data/dataset/kaggle/cassava_leaf_disease_classification/train_csv'
+submissoin_csv_path: '~/data/dataset/kaggle/cassava_leaf_disease_classification/submissoin_csv'
