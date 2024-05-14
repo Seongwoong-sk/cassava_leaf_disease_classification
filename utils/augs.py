@@ -38,7 +38,7 @@ class Augmenter(object):
     def get_valid_transforms(self, cfg: Dict) -> None:
         return Compose([
                         CenterCrop(height=self._cfg, width=self._cfg, p=1.),
-                        Resize(height=self._cfg['img_size'], width=self._cfg['img_size')),
+                        Resize(height=self._cfg['img_size'], width=self._cfg['img_size']),
                         Normalize(mean=[0.485, 0.456, 0.406], 
                                   std=[0.229, 0.224, 0.225], 
                                   max_pixel_value=255.0, 
